@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "26c1b548-af7e-4eef-855a-d81af1f390ea",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24748776"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/api/v1/login?email=howe.domenico@example.org&password=password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/login?email=howe.domenico@example.org&password=password",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "howe.domenico@example.org"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					]
+				},
+				"description": "Login dan  mendapatkan token"
+			},
+			"response": []
+		},
+		{
+			"name": "list-all",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2U1ZWQyNWVlYzIyNjMxM2E3OWJmODE2ODhlYWQyMmNlODZhODExMDQ1NWVlMTA4OWExNGViZWEwODBlYjkyMDljZDU5YTMxYjFkNGRmNDIiLCJpYXQiOjE2NzAwNTA2MDkuNDE2NDc0LCJuYmYiOjE2NzAwNTA2MDkuNDE2NDkxLCJleHAiOjE3MDE1ODY2MDcuMTk3Nzk5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZtLZG7RZN8y2MD8AHMBW0_rZCWafmwVDiS8AEp69sWvIywtVouyEhPPlEiwNUJj09D0ut-JGr-K4tLRvgzclR0EJmEPtW7hZ6yW8qgnyfp9TgMSMbKjKgKJbosP30NhKlMJKsZ9m2iOSvKzjC7ah3B8sstrbyTNlctuCXdgoE3RDFcrnt_5iUQiCNyKrGrBJgB_86irNiUAJu0ls1ncYpBQJ_wbzlv65vwQbLvdZHBxTOjw7XMbjkVgGMzHJZk-1AD0nTIBOGnKZ7aAVrv-qVu-vgjhjQbhm1Hlqcjv94Csp1S23J50Lrf9nnGj4Sq52w-I_ZC1qcDQpV7KF-KK-R8ModNNCaGHjssx62JCVGCz4jafGp7BsGYbJDrCQD84mpbyvGKLzfIby-rdDsCZj4C4_XJ3tbalv95oi-BFuM1dRl6GJVLpw0U5PvNdOJYsoFucV-fF4eFw400PUE2pgDzy10xZwNulLiNKXr4ZCuq2ljwx9KiZSwQZPMyvcME8NjeruusDs78ycz0aNQRhalTS11CIUGhFRZu7nMgSXaDsf0mn_XdcaEYNv9UYdCkh54n550BOM8RFnmDNObcwQX7Jhg9bnL6r3sY_wnptKgtgeoHUMnNr-XNQv5Yur8vmx8mQg9v1NoTqHw4U1sU2m1_ddhG18BTOUI0r0zqA4aPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/list-all",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"list-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2U1ZWQyNWVlYzIyNjMxM2E3OWJmODE2ODhlYWQyMmNlODZhODExMDQ1NWVlMTA4OWExNGViZWEwODBlYjkyMDljZDU5YTMxYjFkNGRmNDIiLCJpYXQiOjE2NzAwNTA2MDkuNDE2NDc0LCJuYmYiOjE2NzAwNTA2MDkuNDE2NDkxLCJleHAiOjE3MDE1ODY2MDcuMTk3Nzk5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZtLZG7RZN8y2MD8AHMBW0_rZCWafmwVDiS8AEp69sWvIywtVouyEhPPlEiwNUJj09D0ut-JGr-K4tLRvgzclR0EJmEPtW7hZ6yW8qgnyfp9TgMSMbKjKgKJbosP30NhKlMJKsZ9m2iOSvKzjC7ah3B8sstrbyTNlctuCXdgoE3RDFcrnt_5iUQiCNyKrGrBJgB_86irNiUAJu0ls1ncYpBQJ_wbzlv65vwQbLvdZHBxTOjw7XMbjkVgGMzHJZk-1AD0nTIBOGnKZ7aAVrv-qVu-vgjhjQbhm1Hlqcjv94Csp1S23J50Lrf9nnGj4Sq52w-I_ZC1qcDQpV7KF-KK-R8ModNNCaGHjssx62JCVGCz4jafGp7BsGYbJDrCQD84mpbyvGKLzfIby-rdDsCZj4C4_XJ3tbalv95oi-BFuM1dRl6GJVLpw0U5PvNdOJYsoFucV-fF4eFw400PUE2pgDzy10xZwNulLiNKXr4ZCuq2ljwx9KiZSwQZPMyvcME8NjeruusDs78ycz0aNQRhalTS11CIUGhFRZu7nMgSXaDsf0mn_XdcaEYNv9UYdCkh54n550BOM8RFnmDNObcwQX7Jhg9bnL6r3sY_wnptKgtgeoHUMnNr-XNQv5Yur8vmx8mQg9v1NoTqHw4U1sU2m1_ddhG18BTOUI0r0zqA4aPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/detail/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"detail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2U1ZWQyNWVlYzIyNjMxM2E3OWJmODE2ODhlYWQyMmNlODZhODExMDQ1NWVlMTA4OWExNGViZWEwODBlYjkyMDljZDU5YTMxYjFkNGRmNDIiLCJpYXQiOjE2NzAwNTA2MDkuNDE2NDc0LCJuYmYiOjE2NzAwNTA2MDkuNDE2NDkxLCJleHAiOjE3MDE1ODY2MDcuMTk3Nzk5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZtLZG7RZN8y2MD8AHMBW0_rZCWafmwVDiS8AEp69sWvIywtVouyEhPPlEiwNUJj09D0ut-JGr-K4tLRvgzclR0EJmEPtW7hZ6yW8qgnyfp9TgMSMbKjKgKJbosP30NhKlMJKsZ9m2iOSvKzjC7ah3B8sstrbyTNlctuCXdgoE3RDFcrnt_5iUQiCNyKrGrBJgB_86irNiUAJu0ls1ncYpBQJ_wbzlv65vwQbLvdZHBxTOjw7XMbjkVgGMzHJZk-1AD0nTIBOGnKZ7aAVrv-qVu-vgjhjQbhm1Hlqcjv94Csp1S23J50Lrf9nnGj4Sq52w-I_ZC1qcDQpV7KF-KK-R8ModNNCaGHjssx62JCVGCz4jafGp7BsGYbJDrCQD84mpbyvGKLzfIby-rdDsCZj4C4_XJ3tbalv95oi-BFuM1dRl6GJVLpw0U5PvNdOJYsoFucV-fF4eFw400PUE2pgDzy10xZwNulLiNKXr4ZCuq2ljwx9KiZSwQZPMyvcME8NjeruusDs78ycz0aNQRhalTS11CIUGhFRZu7nMgSXaDsf0mn_XdcaEYNv9UYdCkh54n550BOM8RFnmDNObcwQX7Jhg9bnL6r3sY_wnptKgtgeoHUMnNr-XNQv5Yur8vmx8mQg9v1NoTqHw4U1sU2m1_ddhG18BTOUI0r0zqA4aPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/delete/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"delete",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2U1ZWQyNWVlYzIyNjMxM2E3OWJmODE2ODhlYWQyMmNlODZhODExMDQ1NWVlMTA4OWExNGViZWEwODBlYjkyMDljZDU5YTMxYjFkNGRmNDIiLCJpYXQiOjE2NzAwNTA2MDkuNDE2NDc0LCJuYmYiOjE2NzAwNTA2MDkuNDE2NDkxLCJleHAiOjE3MDE1ODY2MDcuMTk3Nzk5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZtLZG7RZN8y2MD8AHMBW0_rZCWafmwVDiS8AEp69sWvIywtVouyEhPPlEiwNUJj09D0ut-JGr-K4tLRvgzclR0EJmEPtW7hZ6yW8qgnyfp9TgMSMbKjKgKJbosP30NhKlMJKsZ9m2iOSvKzjC7ah3B8sstrbyTNlctuCXdgoE3RDFcrnt_5iUQiCNyKrGrBJgB_86irNiUAJu0ls1ncYpBQJ_wbzlv65vwQbLvdZHBxTOjw7XMbjkVgGMzHJZk-1AD0nTIBOGnKZ7aAVrv-qVu-vgjhjQbhm1Hlqcjv94Csp1S23J50Lrf9nnGj4Sq52w-I_ZC1qcDQpV7KF-KK-R8ModNNCaGHjssx62JCVGCz4jafGp7BsGYbJDrCQD84mpbyvGKLzfIby-rdDsCZj4C4_XJ3tbalv95oi-BFuM1dRl6GJVLpw0U5PvNdOJYsoFucV-fF4eFw400PUE2pgDzy10xZwNulLiNKXr4ZCuq2ljwx9KiZSwQZPMyvcME8NjeruusDs78ycz0aNQRhalTS11CIUGhFRZu7nMgSXaDsf0mn_XdcaEYNv9UYdCkh54n550BOM8RFnmDNObcwQX7Jhg9bnL6r3sY_wnptKgtgeoHUMnNr-XNQv5Yur8vmx8mQg9v1NoTqHw4U1sU2m1_ddhG18BTOUI0r0zqA4aPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/update?id=3&title=Indonesia gawat membaca&content=Indonesia sekarang ini sangat gawat membaca, literasi kurang&category_id=1&user_id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						},
+						{
+							"key": "title",
+							"value": "Indonesia gawat membaca"
+						},
+						{
+							"key": "content",
+							"value": "Indonesia sekarang ini sangat gawat membaca, literasi kurang"
+						},
+						{
+							"key": "category_id",
+							"value": "1"
+						},
+						{
+							"key": "user_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2U1ZWQyNWVlYzIyNjMxM2E3OWJmODE2ODhlYWQyMmNlODZhODExMDQ1NWVlMTA4OWExNGViZWEwODBlYjkyMDljZDU5YTMxYjFkNGRmNDIiLCJpYXQiOjE2NzAwNTA2MDkuNDE2NDc0LCJuYmYiOjE2NzAwNTA2MDkuNDE2NDkxLCJleHAiOjE3MDE1ODY2MDcuMTk3Nzk5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZtLZG7RZN8y2MD8AHMBW0_rZCWafmwVDiS8AEp69sWvIywtVouyEhPPlEiwNUJj09D0ut-JGr-K4tLRvgzclR0EJmEPtW7hZ6yW8qgnyfp9TgMSMbKjKgKJbosP30NhKlMJKsZ9m2iOSvKzjC7ah3B8sstrbyTNlctuCXdgoE3RDFcrnt_5iUQiCNyKrGrBJgB_86irNiUAJu0ls1ncYpBQJ_wbzlv65vwQbLvdZHBxTOjw7XMbjkVgGMzHJZk-1AD0nTIBOGnKZ7aAVrv-qVu-vgjhjQbhm1Hlqcjv94Csp1S23J50Lrf9nnGj4Sq52w-I_ZC1qcDQpV7KF-KK-R8ModNNCaGHjssx62JCVGCz4jafGp7BsGYbJDrCQD84mpbyvGKLzfIby-rdDsCZj4C4_XJ3tbalv95oi-BFuM1dRl6GJVLpw0U5PvNdOJYsoFucV-fF4eFw400PUE2pgDzy10xZwNulLiNKXr4ZCuq2ljwx9KiZSwQZPMyvcME8NjeruusDs78ycz0aNQRhalTS11CIUGhFRZu7nMgSXaDsf0mn_XdcaEYNv9UYdCkh54n550BOM8RFnmDNObcwQX7Jhg9bnL6r3sY_wnptKgtgeoHUMnNr-XNQv5Yur8vmx8mQg9v1NoTqHw4U1sU2m1_ddhG18BTOUI0r0zqA4aPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/create?title=Dadan Hidayat Adalah seorang programmer&content=Cara membuat api dengan laravel bisa kita gunakan dengan hahahaha&category_id=1&user_id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"create"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Dadan Hidayat Adalah seorang programmer"
+						},
+						{
+							"key": "content",
+							"value": "Cara membuat api dengan laravel bisa kita gunakan dengan hahahaha"
+						},
+						{
+							"key": "category_id",
+							"value": "1"
+						},
+						{
+							"key": "user_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
